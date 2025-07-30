@@ -1,0 +1,28 @@
+{
+  "name": "nubie",
+  "version": "0.1.0",
+  "description": "Nubie Backend",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc",
+    "run": "node build/index.js",
+    "dev:build": "tsc -w",
+    "dev:server": "node --watch build/index.js",
+    "dev": "concurrently 'npm run dev:build' 'npm run dev:server' --kill-others"
+  },
+  "author": "RKS",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.23",
+    "@types/node": "^24.5.2",
+    "concurrently": "^9.2.1",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.2",
+    "nubie": "https://github.com/ronitkrshah/nubie/releases/download/v0.2.2-alpha/nubie-0.2.2-alpha.tgz",
+    "reflect-metadata": "^0.2.2",
+    "socket.io": "^4.8.1"
+  }
+}
